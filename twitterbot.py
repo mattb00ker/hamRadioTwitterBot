@@ -48,7 +48,7 @@ Band            Day        Night
 17m-15m     {}     {}
 12m-10m     {}     {}
 
-Data from hsmqsl.com
+Data from hamqsl.com
 #testing #HFProp"""
 
 #Check it works!
