@@ -61,5 +61,5 @@ Data from hamqsl.com
 
 # Send tweet
 response = client.create_tweet(
-    text=messText.format(updated, solarIndex, topband, topbandn, thirty, thirtyn,seventeen, seventeenn, twelve, twelven)
+    text=messText.format(updated, solarIndex, kindex, sunspotNo, topband, topbandn, thirty, thirtyn,seventeen, seventeenn, twelve, twelven)
 )
