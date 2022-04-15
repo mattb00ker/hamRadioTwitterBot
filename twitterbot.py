@@ -26,6 +26,8 @@ doc = xmltodict.parse(r.data)
 
 updated = doc['solar']['solardata']['updated']
 solarIndex = doc['solar']['solardata']['solarflux']
+kindex = doc['solar']['solardata']['kindex']
+sunspotNo = doc['solar']['solardata']['sunspots']
 topband = doc['solar']['solardata']['calculatedconditions']['band'][0]['#text']
 thirty = doc['solar']['solardata']['calculatedconditions']['band'][1]['#text']
 seventeen = doc['solar']['solardata']['calculatedconditions']['band'][2]['#text']
@@ -41,6 +43,8 @@ messText = """HF Propagation Report
 Updated at {}
 
 SFI: {}
+K index: {}
+Sunspot #: {}
 
 Band            Day        Night
 80m-40m   {}     {}
@@ -51,8 +55,8 @@ Band            Day        Night
 Data from hamqsl.com
 #testing #HFProp"""
 
-#Check it works!
-#print(messText.format(updated, solarIndex, topband, topbandn, thirty, thirtyn,seventeen, seventeenn, twelve, twelven))
+# Check it works!
+#print(messText.format(updated, solarIndex, kindex, sunspotNo, topband, topbandn, thirty, thirtyn,seventeen, seventeenn, twelve, twelven))
 
 
 # Send tweet
