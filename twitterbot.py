@@ -47,16 +47,16 @@ K index: {}
 Sunspot #: {}
 
 Band            Day        Night
-80m-40m   {}     {}
-30m-20m   {}     {}
-17m-15m     {}     {}
-12m-10m     {}     {}
+80m-40m    {:^}     {:>}
+30m-20m    {:^}     {:>}
+17m-15m      {:^}     {:>}
+12m-10m      {:^}     {:>}
 
 Data from hamqsl.com
-#testing #HFProp"""
+#HFProp"""
 
 # Check it works!
-#print(messText.format(updated, solarIndex, kindex, sunspotNo, topband, topbandn, thirty, thirtyn,seventeen, seventeenn, twelve, twelven))
+print(messText.format(updated, solarIndex, kindex, sunspotNo, topband, topbandn, thirty, thirtyn,seventeen, seventeenn, twelve, twelven))
 
 
 # Send tweet
